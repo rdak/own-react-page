@@ -1,3 +1,8 @@
+@import 'partials/reset';
+@import 'partials/header';
+@import 'partials/footer';
+@import 'pages/getData';
+
 .App {
   text-align: center;
 }
@@ -23,38 +28,26 @@
   to { transform: rotate(360deg); }
 }
 
-.header{
-    overflow: hidden;
-    width: 1200px;
+.container{
+    width: 1024px;
     margin: 0 auto;
-    padding: 15px 0;
-       
-    a{
-        color: #000;
-        text-decoration: none;
-    }
+    padding: 0 15px;
+}
 
-    &__logo{
-        float: left;
-        font-size: 20px;
-        line-height: 30px;
-        color: #000;
-        text-decoration: none;
-    }
+.App{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
-    &__menu{
-        float: right;
-        margin: 0;
-        list-style: none;
-    }
+.content {
+  flex: 1 0 auto;
+}
 
-    &__menu-point{
-        font-size: 14px;
-        line-height: 20px;
-        float: left;
-        padding: 5px 10px;
-        &--active a{
-            color: green;
-        }
-    }
+.footer {
+  flex: 0 0 auto;
+}
+
+.body-page{
+
 }

@@ -29,20 +29,16 @@ class Header extends React.Component {
     			href : '/contact',
     			name : 'Контакты',
     		},
-            {
-                href : '/getdata',
-                name : 'GetData'
-            }
     	];
 
     	const navLinks = pages.map(page => {
     		let active = '';
     		console.log(this.props);
-    		if (this.props.currentPage == page.href){
-    			active = ' header__menu-point--active';
+    		if (this.props.currentPage === page.href){
+    			active = ' footer__menu-point--active';
     		}
 
-    		let className = "header__menu-point" + active;
+    		let className = 'footer__menu-point' + active;
 
       		return (
       			<li className={className} key={page.name}>
@@ -50,16 +46,16 @@ class Header extends React.Component {
 	          			{page.name}
 	        		</a>
         		</li>
-		    )
+		    );
     	});
 
 	    return (
-            <div className="container">
-                <div className="header">
-    	    		<div className="header__logo">
+	    	<div className="footer">
+                <div className="container">
+    	    		<div className="footer__logo">
     	    			<a href="/" onClick={this.handleClick}>Vsevolod Chebykin</a>
     	    		</div>
-    	    		<ul className="header__menu">
+    	    		<ul className="footer__menu">
     	    			{navLinks}
     				</ul>
                 </div>

@@ -1,29 +1,52 @@
-.App {
-  text-align: center; }
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px; }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white; }
+body {
+  line-height: 1; }
 
-.App-intro {
-  font-size: large; }
+ol, ul {
+  list-style: none; }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(360deg); } }
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
 
 .header {
   overflow: hidden;
-  width: 1200px;
-  margin: 0 auto;
   padding: 15px 0; }
   .header a {
     color: #000;
@@ -45,3 +68,119 @@
     padding: 5px 10px; }
     .header__menu-point--active a {
       color: green; }
+
+.footer {
+  overflow: hidden;
+  padding: 15px 0;
+  background: #60605F; }
+  .footer a {
+    color: #fff;
+    text-decoration: none; }
+  .footer__logo {
+    float: left;
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.9; }
+  .footer__menu {
+    float: right;
+    margin: 0;
+    list-style: none; }
+  .footer__menu-point {
+    font-size: 14px;
+    line-height: 20px;
+    float: left;
+    padding: 5px 10px; }
+    .footer__menu-point--active a {
+      color: green; }
+
+.fetchData {
+  display: flex;
+  align-content: center;
+  text-align: left;
+  padding: 20px 0; }
+  .fetchData .gitHubData__name,
+  .fetchData h1 {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 10px; }
+  .fetchData ul li {
+    padding: 5px 0;
+    font-size: 16px;
+    line-height: 24px; }
+  .fetchData .redditData {
+    border-right: 1px solid; }
+
+.inputs {
+  text-align: left; }
+
+.search-panel {
+  padding: 20px 0;
+  text-align: left; }
+  .search-panel span {
+    margin: 0 10px 0 0;
+    font-size: 16px;
+    line-height: 30px;
+    width: 150px;
+    float: left;
+    display: inline-block;
+    text-align: right; }
+  .search-panel input {
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: 300px;
+    line-height: 20px;
+    font-size: 16px; }
+    .search-panel input:focus {
+      border: 1px solid #2937EB; }
+
+.hint {
+  color: #60605F;
+  padding: 15px 50px; }
+
+.gitHubData,
+.redditData {
+  flex-basis: 50%;
+  padding: 10px 25px; }
+
+.App {
+  text-align: center; }
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px; }
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white; }
+
+.App-intro {
+  font-size: large; }
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+.container {
+  width: 1024px;
+  margin: 0 auto;
+  padding: 0 15px; }
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
+
+.content {
+  flex: 1 0 auto; }
+
+.footer {
+  flex: 0 0 auto; }
+
+/*# sourceMappingURL=App.css.map */

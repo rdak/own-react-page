@@ -1,0 +1,33 @@
+.header{
+    overflow: hidden;
+    padding: 15px 0;
+       
+    a{
+        color: #000;
+        text-decoration: none;
+    }
+
+    &__logo{
+        float: left;
+        font-size: 20px;
+        line-height: 30px;
+        color: #000;
+        text-decoration: none;
+    }
+
+    &__menu{
+        float: right;
+        margin: 0;
+        list-style: none;
+    }
+
+    &__menu-point{
+        font-size: 14px;
+        line-height: 20px;
+        float: left;
+        padding: 5px 10px;
+        &--active a{
+            color: green;
+        }
+    }
+}

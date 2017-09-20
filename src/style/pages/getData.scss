@@ -1,0 +1,61 @@
+.fetchData{
+	display: flex;
+	align-content: center;
+	text-align: left;
+	padding: 20px 0;
+	.gitHubData__name,
+	h1{
+		font-size: 24px;
+		line-height: 32px;
+		margin-bottom: 10px;
+	}
+	ul li{
+		padding: 5px 0;
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.redditData{
+		border-right: 1px solid;
+	}
+}
+
+.inputs{
+	text-align: left;
+}
+
+.search-panel{
+	padding: 20px 0;
+	text-align: left;
+	span{
+		margin: 0 10px 0 0;
+		font-size: 16px;
+		line-height: 30px;
+		width: 150px;
+		float: left;
+		display: inline-block;
+		text-align: right;
+	}
+	input{
+		outline: none;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		padding: 5px 10px;
+		width: 300px;
+		line-height: 20px;
+		font-size: 16px;
+		&:focus{
+			border: 1px solid #2937EB;
+		}
+	}
+}
+
+.hint{
+	color: #60605F;
+	padding: 15px 50px;
+}
+
+.gitHubData,
+.redditData{
+    flex-basis: 50%;
+    padding: 10px 25px;
+}

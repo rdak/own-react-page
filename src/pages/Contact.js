@@ -13,7 +13,7 @@ class Contact extends React.Component{
                     There are a lot of articles below.
                 </p>
             </div>
-		)
+		);
 	};
 };
 
