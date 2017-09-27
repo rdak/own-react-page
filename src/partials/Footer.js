@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Header extends React.Component {
+class Footer extends React.Component {
 	constructor(props){
       	super(props);
       	this.handleClick = this.handleClick.bind(this);
@@ -13,23 +13,27 @@ class Header extends React.Component {
 
   	render() {
     	const pages = [
-    		{
-    			href : '/',
-    			name : 'Главная',
-    		},
-    		{
-    			href : '/blog',
-    			name : 'Блог',
-    		},
-    		{
-    			href : '/portfolio',
-    			name : 'Портфолио',
-    		},
-    		{
-    			href : '/contact',
-    			name : 'Контакты',
-    		},
-    	];
+            {
+                href : '/',
+                name : 'Homepage',
+            },
+            {
+                href : '/blog',
+                name : 'Blog',
+            },
+            {
+                href : '/portfolio',
+                name : 'Portfolio',
+            },
+            {
+                href : '/contact',
+                name : 'Contact',
+            },
+            {
+                href : '/getdata',
+                name : 'GetData'
+            }
+        ];
 
     	const navLinks = pages.map(page => {
     		let active = '';
@@ -53,7 +57,7 @@ class Header extends React.Component {
 	    	<div className="footer">
                 <div className="container">
     	    		<div className="footer__logo">
-    	    			<a href="/" onClick={this.handleClick}>Vsevolod Chebykin</a>
+    	    			<a href="/" onClick={this.handleClick}>Crowdbotics</a>
     	    		</div>
     	    		<ul className="footer__menu">
     	    			{navLinks}
@@ -64,4 +68,4 @@ class Header extends React.Component {
   	}
 }
 
-export default Header;
+export default Footer;

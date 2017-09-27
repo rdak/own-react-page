@@ -15,19 +15,19 @@ class Header extends React.Component {
     	const pages = [
     		{
     			href : '/',
-    			name : 'Главная',
+    			name : 'Homepage',
     		},
     		{
     			href : '/blog',
-    			name : 'Блог',
+    			name : 'Blog',
     		},
     		{
     			href : '/portfolio',
-    			name : 'Портфолио',
+    			name : 'Portfolio',
     		},
     		{
     			href : '/contact',
-    			name : 'Контакты',
+    			name : 'Contact',
     		},
             {
                 href : '/getdata',
@@ -57,7 +57,7 @@ class Header extends React.Component {
             <div className="container">
                 <div className="header">
     	    		<div className="header__logo">
-    	    			<a href="/" onClick={this.handleClick}>Vsevolod Chebykin</a>
+    	    			<a href="/" onClick={this.handleClick}>Crowdbotics</a>
     	    		</div>
     	    		<ul className="header__menu">
     	    			{navLinks}
